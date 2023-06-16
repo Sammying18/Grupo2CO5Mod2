@@ -21,6 +21,18 @@ class Bullet(Sprite):
         self.rect.y += self.SPEED
         if self.rect.y>= SCREEN_HEIGHT:
             bullets.remove(self)
+        if self.owner == 'enemy':
+            self.rect.y += self.SPEED
+            if self.rect.y >= SCREEN_HEIGHT:
+                bullets.remove(self)
+        elif self.owner == 'player':
+            self.rect.y-=self.SPEED
+            if self.rect.y < -SCREEN_HEIGHT:
+                bullets.remove(self)
+
+
+                
+
 
     def draw (self, screen):
         screen.blit(self.image,(self.rect.x, self.rect.y))

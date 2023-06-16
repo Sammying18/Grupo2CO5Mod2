@@ -4,8 +4,9 @@ from game.components.enemies.enemy import Enemy
 
 
 class EnemyManager:
-    def __init__(self,):
+    def __init__(self):
         self.enemies = []
+        
 
     def update (self,game):
         self.add_enemy()
