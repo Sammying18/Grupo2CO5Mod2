@@ -22,7 +22,7 @@ SOUND_BACK = os.path.join(IMG_DIR, "Sounds/musicafondojuego.MP3")
 SOUND_BACK_M = os.path.join(IMG_DIR, "Sounds/fondojuegomenu.MP3")
 
 
-SHIELD = pygame.image.load(os.path.join(IMG_DIR, 'Other/escudo.png'))
+SHIELD = pygame.image.load(os.path.join(IMG_DIR, 'Other/Shield.png'))
 
 EXPLOSION_ANIM = []
 for i in range (1,13):
@@ -33,8 +33,8 @@ for i in range (1,13):
 
 BG = pygame.image.load(os.path.join(IMG_DIR, 'Other/Track.png'))
 
-IMG_M = pygame.image.load(os.path.join(IMG_DIR, 'Other/FondoMenu.png'))
-IMG_S = pygame.image.load(os.path.join(IMG_DIR, 'Other/fondoscore.png'))
+IMG_M = pygame.image.load(os.path.join(IMG_DIR, 'Other/score.jpg'))
+IMG_S = pygame.image.load(os.path.join(IMG_DIR, 'Other/fondo.jpg'))
 
 HEART = pygame.image.load(os.path.join(IMG_DIR, 'Other/SmallHeart.png'))
 
